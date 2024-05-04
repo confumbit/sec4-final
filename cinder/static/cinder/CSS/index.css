@@ -1,0 +1,168 @@
+body {
+  background-image: linear-gradient(#e73a4e, #f8e858);
+  margin: 0px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+button {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  border-style: solid;
+  background: black;
+  opacity: 0.8;
+  margin-top: 14px;
+}
+button:hover {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  border-style: solid;
+  background-color: black;
+  opacity: 0.8;
+}
+.txt {
+  color: white;
+}
+.txt:hover,
+.txt:active {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #e73a4e),
+    color-stop(1, #f8e858)
+  );
+  background-image: gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #e73a4e),
+    color-stop(0, #f8e858)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0px 10px 10px 10px;
+  float: right;
+  right: 30px;
+}
+li {
+  margin-left: 30px;
+  padding: 0;
+  display: inline;
+}
+.nav {
+  background-color: black;
+  height: 70px;
+  padding-top: 3px;
+}
+.icon {
+  float: left;
+}
+p {
+  font-family: Poppins;
+  font-size: 20px;
+  color: black;
+  line-height: 1.2;
+  padding: 20px 12% 20px 12%;
+}
+h3 {
+  font-family: Poppins;
+  color: black;
+  line-height: 1.2;
+  font-size: 45px;
+  padding: 20px 20px 20px 20px;
+}
+.credits {
+  background-color: black;
+  height: 280px;
+  padding: 20px 20px 20px 20px;
+}
+#hd {
+  color: black;
+  font-size: 3px;
+  font-family: "Great Vibes", cursive;
+}
+#hd:hover,
+#hd:active {
+  font-size: 40px;
+  color: white;
+}
+#htg {
+  color: black;
+  font-size: 3px;
+  font-family: "Great Vibes", cursive;
+}
+#htg:hover,
+#htg:active {
+  font-size: 40px;
+  color: white;
+}
+#sp {
+  color: black;
+  font-size: 3px;
+  font-family: "Great Vibes", cursive;
+}
+#sp:hover,
+#sp:active {
+  font-size: 40px;
+  color: white;
+}
+#km {
+  color: black;
+  font-size: 3px;
+  font-family: "Great Vibes", cursive;
+}
+#km:hover,
+#km:active {
+  font-size: 40px;
+  color: white;
+}
+.usercount {
+  text-align: justify;
+  color: black;
+  font-family: Poppins;
+}
+.updown {
+  font-size: 40px;
+}
+.users {
+  font-size: 125px;
+  font-weight: 900;
+}
+
+.brr {
+  font-family: "Grenze Gotisch", cursive;
+}
+
+h3 {
+  font-family: "Grenze Gotisch", cursive;
+}
+
+.boo {
+  font-family: "Cinzel", serif;
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+}

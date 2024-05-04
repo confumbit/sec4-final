@@ -1,0 +1,97 @@
+  {% load static %}
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Cinder: Create Profile</title>
+    
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "cinder/CSS/create-profile.css" %}">
+  <link rel="icon" href="{% static "cinder/Images/favicon.png" %}">
+  <link href="{% static "cinder/CSS/style.css" %}" rel="stylesheet" media="screen">
+  <link href="{% static "cinder/CSS/mobile-style.css" %}" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+
+<body alink="red" vlink="red">
+  <div class="nav">
+    <a href="{% url "index" %}" style="text-decoration: none;"><img src="{% static "cinder/Images/noway.png" %}" alt="logo" height="70px" width="190px" style="float: left;"></a>
+  </div>
+  <form action="{% url "finishregister" %}" method="POST">
+    {% csrf_token %}
+  	<div class="container1">
+  	<br><br>
+  	<div style="align-items : center; color: #262626; font-size: 30px;  font-family: Poppins ;display: block;font-weight: 500;">
+  		<label>
+  		CREATE A PROFILE
+  		</label>
+  	</div>
+    <br><br><br><br>
+  	<div>
+  		<input id="u" type="text" name="name" placeholder="Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"  required>
+  	</div>
+    <br><br>
+    <div>
+      <input id="ee" type="email" name="email" placeholder="Email ID*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email ID (you will need this to login to Cinder.)'" required>
+    </div>
+    <br><br>
+    <div>
+      <input id="ee" type="password" name="password" placeholder="Password*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your password (you will need this to login to Cinder.)'" required>
+    </div>
+    <br><br><br><br>
+    <label style="font-family: Poppins;" for="sel">Class</label>
+    <select  name="class" id="sel">
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label style="font-family: Poppins;" for="sel">Section</label>
+    <select name="section" id="sel">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="H">H</option>
+      <option value="I">I</option>
+    </select>
+    <br><br><br><br><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label style="font-family: Poppins;" for="sel">Gender</label>
+    <select name="gender" id="sel">
+      <option value="{% static "cinder/Images/female.png" %}">Female</option>
+      <option value="{% static "cinder/Images/maley.png" %}">Male</option>
+      <option value="{% static "cinder/Images/other.png" %}">Other</option>
+    </select>
+    <br><br><br><br>
+    <div>
+  		<input id="u" type="text" name="insta" placeholder="Instagram ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Instagram ID without an @'"  >
+    </div>
+    <br><br>
+    <input id="u" type="text" name="whatsapp" placeholder="WhatsApp Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your 10 digit Whatsapp Number'"  >
+    <br><br>
+    <input id="u" type="text" name="snapchat" placeholder="Snapchat ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Snapchat ID'"  >
+    <br><br>
+    <input id="u" type="text" name="othermedia" placeholder="Other social media" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your other social media'"  >
+    <br><br>
+    <div>
+    <textarea name="interests" id="tt" cols="30" rows="10" placeholder="Interests you would like to talk about with others*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Interests you would like to talk about with others'" required></textarea>
+    <br><br>
+    <div>
+      <textarea name="bio" id="tt" cols="30" rows="10" placeholder="Something about your self*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Something about your self'" required></textarea>
+    </div>
+    <br><br>
+    <div style="font-family: Poppins;font-size: 13.5px;padding-right: 35px;padding-left: 35px;opacity: 0.8;">
+      By clicking on 'Create Profile' I forfeit liberal use of the above information to the administrator.Click on <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Terms & Conditions</a> for further details.
+    </div>
+  	<div class="bc">
+  		<button class="be" type="submit" name="register"><span id="txt">Create Profile</span></button>
+  	</div>
+  </div>
+  </form>
+  </body>
+  </html>

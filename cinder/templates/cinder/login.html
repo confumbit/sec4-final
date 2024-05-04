@@ -1,0 +1,79 @@
+{% load static %}
+<html>
+  <head>
+    <title>Cinder: Log In</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static "cinder/CSS/login.css" %}" /> <link
+    rel="icon" href="{% static "cinder/Images/favicon.png" %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body link="red" alink="red" vlink="red">
+    <div class="nav">
+      <a href="{% url "index" %}" style="text-decoration: none"
+        ><img src="{% static "cinder/Images/noway.png" %}" height="70px"
+        width="190px" alt="logo" style="float: left" /></a
+      >
+    </div>
+    <div class="container">
+      <form action="{% url "finishlogin" %}" method="POST">
+        {% csrf_token %}
+        <div
+          style="
+            align-items: center;
+            color: #262626;
+            font-size: 30px;
+            font-family: Poppins;
+            display: block;
+            font-weight: 500;
+          "
+        >
+          <label> LOG IN </label>
+        </div>
+        <br /><br /><br /><br />
+        <label for="u" style="font-family: Poppins; font-size: 20px"
+          >Enter the email ID you used <br />
+          when creating your profile.</label
+        >
+        <br /><br /><br />
+        <input
+          id="u"
+          class="email"
+          type="email"
+          name="email"
+          placeholder="Registered email ID"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Enter your email ID'"
+        />
+        <br /><br /><br />
+        <input
+          id="u"
+          class="password"
+          type="password"
+          name="password"
+          placeholder="Registered password"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Enter your password'"
+        />
+        <br /><br /><br />
+        <center>
+          <button><span class="txt">Log In</span></button>
+        </center>
+        <br /><br /><br />
+        <span
+          style="
+            font-family: Poppins;
+            font-size: 13.5px;
+            padding-right: 35px;
+            padding-left: 35px;
+            opacity: 0.8;
+          "
+          >Don't have a profile yet? <a href="{% url "register" %}">Click here</a> to
+          create one.</span
+        >
+      </form>
+    </div>
+  </body>
+</html>
